@@ -31,3 +31,5 @@ console.log(assertArraysEqual(result1.h, ['0']));
 console.log(assertArraysEqual(result1.e, ['1']));
 console.log(assertArraysEqual(result1.l, ['2', '3']));
 console.log(assertArraysEqual(result1.o, ['4']));
+
+module.exports = letterPositions;

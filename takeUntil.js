@@ -38,3 +38,5 @@ const result3 = takeUntil(data3, (x) => x.length > 4);
 assertArraysEqual(result1, [1, 2, 5, 7, 2]);
 assertArraysEqual(result2, ["I've", "been", "to", "Hollywood"]);
 assertArraysEqual(result3, ["this", "is", "a", "test"]);
+
+module.exports = takeUntil;

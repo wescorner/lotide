@@ -29,3 +29,5 @@ const result3= findKey(data, (x) => x.stars === 3);
 assertEqual(result1, "Blue Hill");
 assertEqual(result2, "noma");
 assertEqual(result3, "Akaleri");
+
+module.exports = findKey;
