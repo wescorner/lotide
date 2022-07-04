@@ -1,9 +1,13 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const words = ["Hello", "Lighthouse", "Labs"];
-const result = tail(words);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
-assertEqual(words.length, 3);
+describe("#middle", () => {
+  it("should return ['Lighthouse', 'Labs'] when given ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+  it("should not alter the length of the original string", () => {
+    const words = ["Hello", "Lighthouse", "Labs"];
+    result = tail(words);
+    assert.strictEqual(words.length, 3);
+  });
+});
