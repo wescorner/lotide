@@ -1,7 +1,7 @@
 const without = function(source, itemsToRemove) {
   let result = [];
-  for(const item of source) {
-    if(!itemsToRemove.includes(item)) {
+  for (const item of source) {
+    if (!itemsToRemove.includes(item)) {
       result.push(item);
     }
   }

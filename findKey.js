@@ -1,6 +1,6 @@
 const findKey = function(object, callback) {
-  for(const index in object) {
-    if(callback(object[index])) {
+  for (const index in object) {
+    if (callback(object[index])) {
       return index;
     }
   }

@@ -7,7 +7,7 @@ describe("#middle", () => {
   });
   it("should not alter the length of the original string", () => {
     const words = ["Hello", "Lighthouse", "Labs"];
-    result = tail(words);
+    tail(words);
     assert.strictEqual(words.length, 3);
   });
 });
