@@ -36,5 +36,6 @@ The following functions are currently implemented:
 * `takeUntil(array, function)`: Returns array with items added from the input array until input function evaluates to 'true'
 * `eqArrays(array1, array2)`: Returns true if two input arrays are exactly equal, and false if they are not
 * `eqObjects(object1, object2)`: Returns true if two input objects are exactly equal, and false if they are not
+* `findKey(object, function)`: Returns first key from input object where input function returns true
 * `findKeyByValue(object, value)`: Returns key from input object that contains input value, returns undefined if no key found
 * `countOnly(object, itemsObject)`: Returns object where keys are keys from input object, and values are occurrences in the input object. Only adds keys to return object when the value for that key in the itemsObject input is 'true'
